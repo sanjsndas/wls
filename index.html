@@ -1,205 +1,93 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="" />
-    <link rel="icon" href="" type="image/jpg" sizes="16x16" />
-
-    <link
-      rel="stylesheet"
-      href="asset/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    
-    <link
-      rel="stylesheet"
-      href="asset/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="asset/style.css">
-    <meta name="google-site-verification" content="Kjx8H8kfw3ezl2qQJp7ODkp-QsdKKOiHXAsu_3IbgMs" />
-    <title>Wells Fargo | Financial Services </title>
-  </head>
-  <body>
-    <div class="nav_bar fixed-top">
-        <div class="inner_nav">
-            <a href="https://wellssupporthub.netlify.app/"><img src="https://wellssupporthub.netlify.app/./images/logo.webp" alt="" class="logo"></a>
-
-            <div class="nav_list">
-                <a href="https://wellssupporthub.netlify.app/#" class="d-none d-sm-flex">ATMs/Location</a>
-                <a href="https://wellssupporthub.netlify.app/#" class="d-none d-sm-flex">Help</a>
-                <a href="https://wellssupporthub.netlify.app/#" class="smlbtn">Login</a>
-                </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Billing System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BillingSystem</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="hero_sec">
-        <div class="container">
-            <div class="row">
-               
-                
-                <div class="col-lg-4 col-md-6 col-10 mx-auto mb-3 order-2 order-md-1">
-                    <div class="card p-3">
-                        <div class="model_box" id="mod_box">
-                   
-                            <div class="inner_model">
-                             
-                                <h5>Contact Support for <a href="https://wellssupporthub.netlify.app/tel:+1 847-996-1546">+1 847-996-1546</a> </h5>
-                               
-                              <hr />
-                             
-     <div class="alert alert-danger" id="success-msg">Contact Wells Fargo Bank Support <a href="https://wellssupporthub.netlify.app/tel:+1 847-996-1546">+1 847-996-1546</a> </div>
-     <div class="alert alert-danger" id="error-msg"> Invalid username or password.  </div>
-    
-  
+  </nav>
 
-    <div id="contact-form">
-        
-    
-        <form  id="contactForm" action="https://formspree.io/f/mqapgeyw" method="POST">
-            <div class="form-group">
-                <label for="name">Username:</label>
-                <input type="text" class="form-control" name="name" id="name" autocomplete="off" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" name="email" id="email" autocomplete="off" required>
-            </div>
-            <div class="form-group">
-                <label for="number">Number:</label>
-                <input type="number" class="form-control" name="number" id="number" autocomplete="off" required>
-            </div>
-            <div class="text-right">
-                <button type="submit" name="submit_contact" class="btn btn-danger py-2 px-5">Contact Us</button>
-            </div>
-        </form>
-    </div> 
-                            </div>
-                          
-    
-                       </div>
-    
-    
-                            
-    
-                       <div id="login-form">
-                        <h3>Welcome to WellFargo </h3>
-                        <p class="m-0">Sign on to manage your accounts.</p>
-                        <form action="" method="POST" class="mt-4" >
-                            <div class="form-group">
-                              <label for="name">Username:</label>
-                              <input type="text" class="form-control" placeholder="" name="username" autocomplete="off" required>
-                            </div>
-                            <div class="form-group">
-                              <label for="pwd">Password:</label>
-                              <input type="password" class="form-control" placeholder="" name="password" autocomplete="off" required>
-                            </div>
-                            
-                            <div class="text-right">
-                                <button type="submit" name="submit" class="btn btn-danger py-2 px-5">Sign in</button>
-                            </div>
-                            
-                          </form>
-                       </div>
-                    </div>
-                    
-                </div>
-
-                <div class="col-lg-8 col-md-6 col-12 mx-auto mb-5 d-flex justify-content-center align-item-center flex-column order-1 order-md-2">
-                    <div class="box">
-                        <h2 class="mb-4" >We are open for your support
-
-                        </h2>
-                        <h5>Wells Fargo Bank Customer <br>
-                            Support Number : <a href="https://wellssupporthub.netlify.app/tel:+1 847-996-1546">+1 847-996-1546</a> </h5>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
+  <!-- Hero Section -->
+  <section class="bg-light text-center p-5">
+    <div class="container">
+      <h1>Welcome to Online Billing System</h1>
+      <p class="lead">Create and manage invoices with ease.</p>
+      <a href="#" class="btn btn-primary">Get Started</a>
     </div>
+  </section>
 
-   
+  <!-- Features Section -->
+  <section class="container py-5">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h3>Invoice Management</h3>
+        <p>Create, send, and track your invoices all in one place.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Client Database</h3>
+        <p>Manage all your clients with easy-to-use tools.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Reports</h3>
+        <p>Generate and download financial reports anytime.</p>
+      </div>
+    </div>
+  </section>
 
-    <script>
-         document.addEventListener("DOMContentLoaded", function () {
-        
-        document.getElementById("success-msg").style.display = "none";
-       // document.getElementById("error-msg").style.display = "none";
+  <!-- Additional Information Section -->
+  <section class="container py-5">
+    <h2 class="mb-4">Why Choose Our Billing System?</h2>
+    <p>Our online billing platform is designed to simplify financial operations for freelancers, small businesses, and large enterprises alike. With intuitive interfaces and secure data handling, you can focus more on your business and less on the paperwork.</p>
+    <p>We offer features like automated invoice generation, tax calculations, recurring billing, and multiple payment integrations. You can access the platform anywhere and at any time, making remote billing a breeze.</p>
+  </section>
 
-       // Handle login form submission
-       document.getElementById("login-form").addEventListener("submit", function (event) {
-           event.preventDefault(); // Prevent actual form submission
-           
-           // Show error message
-           
-           document.querySelector('input[name="username"]').value = "";
-           document.querySelector('input[name="password"]').value = "";
+  <section class="container py-4">
+    <h2 class="mb-4">How It Works</h2>
+    <p>After registering, users can immediately begin managing their billing activities. You can create new invoices using ready-made templates, save client details, and send professional invoices directly to their emails. The dashboard provides a comprehensive overview of your income, outstanding payments, and payment history.</p>
+    <p>All your data is securely stored and backed up, ensuring safety and accessibility. Our support team is also available 24/7 to assist with any questions or technical issues.</p>
+  </section>
 
-           var errorMsg = document.getElementById("error-msg");
+  <!-- New Content Section -->
+  <section class="container py-5">
+    <h2 class="mb-4">User-Friendly Dashboard</h2>
+    <p>Our dashboard is designed with simplicity in mind. Whether you're tech-savvy or new to online tools, navigating through the dashboard is straightforward. View all pending and completed invoices, track client payments, and get alerts for overdue bills instantly.</p>
+    <p>You can customize widgets on the dashboard according to your needs. See your monthly income summary, most active clients, and top services all in one place.</p>
+  </section>
 
-           // Hide login form and show contact form after a delay
-           setTimeout(function () {
-              
-               document.getElementById("mod_box").style.display="flex"               
-                  errorMsg.style.display = "block";
-              
-              
-           }, 1000);
-           
-           setTimeout(function () {
-              
-                      
-                 errorMsg.style.display = "none";
-             
-             
-          }, 5000);
-       });
+  <section class="container py-4">
+    <h2 class="mb-4">Data Privacy and Security</h2>
+    <p>We understand how important your data is. That’s why we implement top-tier encryption standards, regular backups, and firewall protection to ensure your data remains secure at all times. Two-factor authentication and user activity logs further enhance your control over account access.</p>
+    <p>Our systems are GDPR and PCI-DSS compliant, making them reliable for both domestic and international billing operations.</p>
+  </section>
 
+  <section class="container py-4">
+    <h2 class="mb-4">Customer Support</h2>
+    <p>Our dedicated support team is here for you 24/7. Whether you encounter a technical glitch, have questions about features, or need help getting started, we’re just a click away. Use our in-app chat, help center, or email support to get assistance anytime.</p>
+    <p>We also offer detailed video tutorials and documentation to guide you step-by-step through each feature of the platform.</p>
+  </section>
 
-       document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent actual form submission
-    document.getElementById("success-msg").style.display = "block";
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 Online Billing System. All rights reserved.</p>
+  </footer>
 
-// console.log("okkk")
-    var form = this;
-    var formData = new FormData(form);
-
-    // Send form data to Formspree using Fetch API
-    fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: {
-            "Accept": "application/json"
-        }
-    }).then(response => {
-        if (response.ok) {
-            // Show success message
-            // document.getElementById("success-msg").style.display = "block";
-        //  document.getElementById("success-msg").style.display = "none";
-
-            // Clear input fields
-            form.reset();
-        } else {
-            alert("Oops! Something went wrong.");
-        }
-    }).catch(error => {
-        alert("Oops! Something went wrong.");
-    });
-});
-
-
-
-
-    })
-
-
-
-    </script>
-    
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
